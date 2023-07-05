@@ -1,1 +1,0 @@
-INSERT INTO `proyecto`.`producto` (`nombre`, `precio`, `stock`, `imagen`) VALUES ('Mouse', '12365', '10', 'https://http2.mlstatic.com/D_NQ_NP_744609-MLA32854739285_112019-O.webp');
