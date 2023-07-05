@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Producto Nuevo</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="./Estilos/estilo.css">
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+<body>
+  <header class="header">
+    
+    <a href="productos.html" class="titulo">
+      <img class="icono-inicio" src="https://i.pinimg.com/originals/a8/02/2f/a8022ff27f7fafc4bcfa6436ed99a494.gif">Productos</img>
+    </a>
+
+  </header>
+  <div class="container">
+
+    <nav class="navbar navbar-light bg-light">
+
+      <a  class="btn btn-primary" href="productos.html">Inicio</a>
+      <a  class="btn btn-primary" href="productos.html">Lorem</a>
+      <a  class="btn btn-primary" href="productos.html">Lorem</a>
+
+    </nav>
+
+  </div>
+  <main>
+    <div class="container container-formulario" id="app">
+
+      <form class="formulario-editar">
+        <div class="container-editar">
+          <h1>Alta de Producto</h1>
+          <div class="mb-3">
+            <h4>Nombre</h4>
+            <label for="nombre"></label>
+            <input type="text" name="nombre" id="nombre" v-model="nombre">
+          </div>
+
+          <div class="mb-3">
+            <h4>Precio</h4>
+            <label for="precio"></label>
+            <input type="number" name="precio" id="precio" v-model="precio">
+          </div>
+
+          <div class="mb-3">
+            <h4>Stock</h4>
+            <label for="stock"></label>
+            <input type="number" name="stock" id="stock" v-model="stock">
+          </div>
+
+          <div class="mb-3">
+            <h4>Imagen</h4>
+            <label for="imagen"></label>
+            <input type="text" name="imagen" id="imagen" v-model="imagen">
+            <img width="100" :src="imagen" alt="">
+          
+          </div>
+
+          <button type="button" class="btn btn-success" v-on:click="grabar()">Grabar</button>
+          <a onclick="return confirm('¿Desea Cancelar?')" href="productos.html" class="btn btn-warning">Cancelar</a>
+
+        </div>
+        
+      </form>
+
+
+    </div>
+
+
+  </main>
+  <footer>
+    <!-- place footer here -->
+  </footer>
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <script src="./js/main.js"></script>
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <script src="./js/productos.js"></script>
+</body>
+</html>
