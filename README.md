@@ -17,4 +17,8 @@ Estructura:
 4. Stock - INT
 5. Imagen - VARCHAR
 
-   
+Abrir el proyecto en VS Code.
+Ejecutar el archivo "APP.PY", en la consola o en la terminal de VS Code.
+Ingresar desde el navegador a la URL: http://127.0.0.1:5500/productos.html
+
+
