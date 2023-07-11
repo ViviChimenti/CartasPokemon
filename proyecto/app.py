@@ -7,8 +7,8 @@ app=Flask(__name__) #Crea el objeto app de la clase Flask
 CORS(app) #permite acceder desde el front al back
 
 # configuro la base de datos, con el nombre el usuario y la clave
-# app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://user:password@localhost/proyecto'
-app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:@localhost/proyecto'
+# app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://user:password@localhost/proyecto2'
+app.config['SQLALCHEMY_DATABASE_URI']='mysql+pymysql://root:@localhost/proyecto2'
 app.config['MYSQL_DATABASE_DB']='proyecto'
 # URI de la BBDD                          driver de la BD  user:clave@URLBBDD/nombreBBDD
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS']=False #none
